@@ -1,42 +1,164 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haberler - Alişar Köyü</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haberler - Alişar Köyü</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f7f9f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    header {
+        background-color: #3a823a;
+        color: white;
+        text-align: center;
+        padding: 25px 0;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    nav {
+        background: #2f6e2f;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 14px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #e0f0e0;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #2e6b2e;
+        margin-bottom: 30px;
+        font-size: 1.9em;
+    }
+
+    article {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    article h3 {
+        color: #3a823a;
+        margin-bottom: 8px;
+        font-size: 1.4em;
+    }
+
+    .date {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 12px;
+        display: block;
+    }
+
+    article p {
+        text-align: justify;
+        margin-bottom: 15px;
+        font-size: 1.05em;
+    }
+
+    footer {
+        background-color: #2f4f2f;
+        color: white;
+        text-align: center;
+        padding: 18px 0;
+        margin-top: 50px;
+        font-size: 0.95em;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            margin: 20px;
+            padding: 25px;
+        }
+
+        header h1 {
+            font-size: 1.6em;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 6px;
+        }
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Alişar Köyü</h1>
-        <nav>
-            <a href="index.html">Ana Sayfa</a>
-          <a href="hakkimizda.html">Hakkımızda</a>
-          <a href="haberler.html">Haberler</a>
-          <a href="galeri.html">Galeri</a>
-          <a href="iletişi.html">İletişim</a> 
-        </nav>
-    </header>
+<header>
+    <h1>Alişar Köyü</h1>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="haberler.html">Haberler</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+</header>
 
-    <main>
-        <h2>Köy Haberleri</h2>
-        <article>
-            <h3>Köy Şenliği ve Tarihi</h3>
-            <p>Bu yıl ilki düzenlenip geleneksel hale gelmesi planlanan köy şenliği yapılacaktır.Tarih 15 ağustos 2026 olarak belirlenmiştir</p>
-        </article>
+<main>
+    <h2>📰 Köy Haberleri</h2>
 
-        <article>
-            <h3>Su Kesintisi</h3>
-            <p>İçme suyu ile bahçe sulayan köy sakinlerine cezai işlem uygulanacaktır.</p>
-        </article>
-        <article>
-            <h3>Köy İçi Yolları</h3>
-            <p>Köy Muhtarı Mustafa Yılmaz'ın büyük gayret ve çabları ile 2024 yılı itibariyle köy ara yolları kilit parke taşı olarak Özel İdare tarafından yapılmıştır. </p>
-        </article>
-    </main>
-    <footer>
-        <p>© 2025 Alişar Köyü</p>
-    </footer>
-    
+    <article>
+        <h3>🌾 Alişar Köyü Şenliği Tarihi Belirlendi</h3>
+        <span class="date">15 Ağustos 2026</span>
+        <p>Alişar Köyü’nde bu yıl ilk kez düzenlenecek “Alişar Köyü Kültür ve Dayanışma Şenliği”, köy meydanında gerçekleştirilecektir. Şenlik, gurbette yaşayan köylülerimizi bir araya getirmeyi ve kültürel değerlerimizi yaşatmayı hedeflemektedir.</p>
+        <p>Etkinlikte halk oyunları gösterileri, yöresel yemek yarışması, çocuk oyun alanları ve akşam saatlerinde yerel sanatçılar tarafından konserler düzenlenecektir. Tüm köylülerimizin katılımı beklenmektedir.</p>
+    </article>
+
+    <article>
+        <h3>🚰 Su Kullanımı Hakkında Önemli Duyuru</h3>
+        <span class="date">1 Kasım 2025</span>
+        <p>Muhtarlık duyurusuna göre, içme suyu hattından bahçe veya tarla sulaması yapan vatandaşlar hakkında cezai işlem uygulanacaktır. Yaz aylarında su sıkıntısı yaşanmaması için köylülerimizin dikkatli olması önemlidir.</p>
+        <p>Yeni karara göre denetimler artırılacak ve içme suyu yalnızca evsel kullanım için kullanılacaktır. Muhtar Mustafa Yılmaz, “Suyumuzu korumak hepimizin görevi. Her damla köyümüzün geleceği için önemlidir.” açıklamasında bulundu.</p>
+    </article>
+
+    <article>
+        <h3>🚜 Köy İçi Yolları Yenilendi</h3>
+        <span class="date">10 Kasım 2024</span>
+        <p>Köy içi yolların yenilenmesi çalışmaları tamamlandı. Muhtar Mustafa Yılmaz ve İl Özel İdaresi’nin destekleriyle, yollar kilit parke taşı ile döşendi.</p>
+        <p>Toplam 30 km’lik yol hem araç trafiğini kolaylaştırdı hem de köyün estetiğine katkı sağladı. Ayrıca köy meydanı düzenlenerek çevre temizliği yapıldı.</p>
+    </article>
+
+    <article>
+        <h3>🌳 Mezarlık  Projesi</h3>
+        <span class="date">2 Temmuz 2024</span>
+        <p>“Yeşil Alişar” projesi kapsamında Alişar köylülerin gönüllü köy girişine 300 adet çam ve sedir fidanı dikti. Etkinliğe köy halkı katıldı.</p>
+        <p>Proje her yıl tekrarlanacak ve köyün doğal güzelliği artırılacaktır. Muhtar Yılmaz, “Her dikilen ağaç gelecek kuşaklara bırakılan bir mirastır.” diyerek emeği geçenlere teşekkür etti.</p>
+    </article>
+</main>
+
+<footer>
+    © 2025 Alişar Köyü | Tüm Hakları Saklıdır
+</footer>
 </body>
 </html>
