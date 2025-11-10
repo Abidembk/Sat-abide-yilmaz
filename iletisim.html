@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim - Alişar Köyü</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f7f9f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #3a823a;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background: #2f6e2f;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e0f0e0;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 40px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e6b2e;
+      margin-bottom: 25px;
+      font-size: 1.8em;
+    }
+
+    p.intro {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+      font-size: 1.05em;
+    }
+
+    .info {
+      background: #f0f5f0;
+      padding: 25px;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+
+    .info h3 {
+      color: #2e6b2e;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3a823a;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      font-size: 1.05em;
+    }
+
+    .info a {
+      color: #3a823a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    .map-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #2f4f2f;
+      color: white;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 20px;
+        padding: 25px;
+      }
+
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alişar Köyü</h1>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="haberler.html">Haberler</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>📩 Bizimle İletişime Geçin</h2>
+    <p class="intro">
+      Görüş, öneri ve sorularınız için aşağıdaki iletişim bilgilerini kullanarak bizimle kolayca iletişime geçebilirsiniz.
+    </p>
+
+    <div class="info">
+      <h3>📍 İletişim Bilgilerimiz</h3>
+      <p><strong>Adres:</strong> Alişar Köyü, Sorgun / Yozgat</p>
+     <p><strong>Muhtar:</strong> Mustafa Yılmaz</p>
+      <p><strong>Telefon:</strong> 
+        <a href="tel:+905365435350">0 (536) 543 53 50</a>
+      </p>
+  
+        <p><strong>E-posta:</strong> <a href="mailto:info@alisarKoyu.com">info@alisarKoyu.com</a></p>
+      </p>
+    </div>
+
+    <div class="map-container">
+      <h3>🗺️ Konumumuz</h3>
+      <iframe 
+        src="https://www.google.com/maps?q=Alişar%20Köyü%20Sorgun%20Yozgat&output=embed" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Alişar Köyü | Tüm Hakları Saklıdır
+  </footer>
+</body>
+</html>
