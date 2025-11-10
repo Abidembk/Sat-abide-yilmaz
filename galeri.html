@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alişar Köyü Galerisi</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f3f6f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      background: #3a823a;
+      color: white;
+      padding: 20px 0;
+      border-bottom: 4px solid #2c612c;
+    }
+
+    nav {
+      background: #2f6e2f;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    p.subtitle {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+      color: #e0f0e0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 30px auto;
+      max-width: 1000px;
+      padding: 0 10px;
+    }
+
+    .gallery img {
+      width: 230px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: transform 0.2s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background: #2f4f2f;
+      color: white;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+        max-width: 95%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📸 Alişar Köyü Galerisi</h1>
+    <p class="subtitle">Köyümüzün güzelliklerinden kareler</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="haberler.html">Haberler</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+  <footer>
+    © 2025 Alişar Köyü | Tüm Hakları Saklıdır
+  </footer>
+
+</body>
+</html>
