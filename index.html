@@ -4,7 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alişar Köyü - Ana Sayfa</title>
+
   <style>
+    .slider-container {
+  width: 90%;
+  max-width: 900px;
+  height: 420px;
+  margin: 25px auto 40px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.slider-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slider-images img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+#prev { left: 10px; }
+#next { right: 10px; }
+
+@media(max-width: 600px){
+  .slider-container {
+    height: 280px;
+  }
+}
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,7 +69,7 @@
     }
 
     header {
-      background-color: #00c8c8;
+      background-color: #037e26;
       width: 100%;
       text-align: center;
       padding: 1.5em 0;
@@ -29,10 +83,17 @@
       margin-bottom: 0.5em;
     }
 
+    h2 {
+        text-align: center;
+        color: #2e6b2e;
+        margin-bottom: 30px;
+        font-size: 1.9em;
+    }
+
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #004d4d;
+      color: #ffffff;
       font-weight: bold;
       transition: color 0.3s;
     }
@@ -44,7 +105,7 @@
     h1 {
       margin: 0.3em 0 0.5em 0;
       font-size: 2em;
-      color: #003333;
+      color: #ffffff;
     }
 
     section {
@@ -60,7 +121,7 @@
       width: 80%;
       max-width: 900px;
       height: 500px;
-      border: 3px solid #008000;
+      border: 3px solid #000000;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -102,21 +163,119 @@
     
   </header>
 
-  <section>
-    <p>
-      Bu site köyümüzün tanıtımı, haberleri ve etkinlikleri için hazırlanmıştır.  
-      Aşağıda köyümüzün Google Haritası üzerinden konumunu görebilirsiniz.
-    </p>
-  </section>
+  <div class="slider-container">
+  <button class="slider-btn" id="prev">&#10094;</button>
+  <div class="slider-images" id="slider">
 
-  <div class="harita-kapsayici">
-    <iframe
-      src="https://www.google.com/maps?q=Alişar+Köyü+Sorgun+Yozgat&hl=tr&z=14&output=embed"
-      allowfullscreen
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <!-- FOTOĞRAFLAR BURADA OLUYOR -->
+    <img src="galeri/1.jpeg">
+    <img src="galeri/2.jpeg">
+    <img src="galeri/3.jpeg">
+    <img src="galeri/4.jpeg">
+    <img src="galeri/5.jpeg">
+    <img src="galeri/6.jpeg">
+    <img src="galeri/7.jpeg">
+    <img src="galeri/8.jpeg">
+    <img src="galeri/9.jpeg">
+    <img src="galeri/10.jpeg">
+    <img src="galeri/11.jpeg">
+    <img src="galeri/12.jpeg">
+    <img src="galeri/13.jpeg">
+    <img src="galeri/14.jpeg">
+    <img src="galeri/15.jpeg">
+    <img src="galeri/17.jpeg">
+    <img src="galeri/18.jpeg">
+    <img src="galeri/19.jpeg">
+    <img src="galeri/20.jpeg">
+    <img src="galeri/21.jpeg">
+    <img src="galeri/22.jpeg">
+    <img src="galeri/23.jpeg">
+    <img src="galeri/24.jpeg">
+    <img src="galeri/25.jpeg">
+    <img src="galeri/26.jpeg">
+    <img src="galeri/27.jpeg">
+    <img src="galeri/28.jpeg">
+
   </div>
+  <button class="slider-btn" id="next">&#10095;</button>
+</div>
 
+  <div style="
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-left: 6px solid #007a2f;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+">
+  <main>
+    <h2>📰 Köy Haberleri</h2>
+
+    <article>
+        <h3>🌾 Alişar Köyü Şenliği Tarihi Belirlendi</h3>
+        <span class="date">15 Ağustos 2026</span><br>
+        <a href="haber1.html" style="color:#2f6e2f; font-weight:bold;">➤ Haberin Devamı</a>
+    </article>
+
+
+    <article>
+        <h3>🚰 Su Kullanımı Hakkında Önemli Duyuru</h3>
+        <span class="date">1 Kasım 2025</span><br>
+        <a href="haber2.html" style="color:#2f6e2f; font-weight:bold;">➤ Haberin Devamı</a>
+    </article>
+
+    <article>
+        <h3>🚜 Köy İçi Yolları Yenilendi</h3>
+        <span class="date">10 Kasım 2024</span><br>
+        <a href="haber3.html" style="color:#2f6e2f; font-weight:bold;">➤ Haberin Devamı</a>
+    </article>
+
+    <article>
+        <h3>🌳 Mezarlık  Projesi</h3>
+        <span class="date">2 Temmuz 2024</span><br> 
+         
+        <a href="haber4.html" style="color:#2f6e2f; font-weight:bold;">➤ Haberin Devamı</a>
+    </article>
+
+    <article>
+        <h3>🕊️ Vefat Edenler</h3>
+         
+        <a href="vefat.html" style="color:#2f6e2f; font-weight:bold;">➤ Haberin Devamı</a>
+    </article>
+
+        <article>
+        <h3>🕊️ Vefat Edenler</h3>
+         
+        <a href="vefat.html" style="color:#2f6e2f; font-weight:bold;">➤ Haberin Devamı</a>
+    </article>
+
+    <article>
+        <h3>💍 Evlenenler</h3>
+         
+        <a href="evlenenler.html" style="color:#2f6e2f; font-weight:bold;">➤ Haberin Devamı</a>
+    </article>
+  </main>
+</div>
 </body>
 </html>
+
+<script>
+let index = 0;
+const slider = document.getElementById("slider");
+const total = slider.children.length;
+
+function showSlide(i){
+  index = (i + total) % total;
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+document.getElementById("next").onclick = () => showSlide(index + 1);
+document.getElementById("prev").onclick = () => showSlide(index - 1);
+
+setInterval(() => {
+  showSlide(index + 1);
+}, 3500);
+</script>
